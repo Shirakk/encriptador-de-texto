@@ -1,11 +1,11 @@
-const encriptar = document.querySelector('#enc');
-const desencriptar = document.querySelector('#des');
+const encriptacion = document.querySelector('#enc');
+const desencriptacion = document.querySelector('#des');
 const copy = document.querySelector('#copiar');
 
 var traduccion = {"a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat"};
 
-encriptar.addEventListener( 'click', function() {encriptar(traduccion);} );
-desencriptar.addEventListener( 'click', function() {desencriptar(traduccion);} );
+encriptacion.addEventListener( 'click', function() {encriptar(traduccion);} );
+desencriptacion.addEventListener( 'click', function() {desencriptar(traduccion);} );
 copy.addEventListener( 'click', function() {clipboard();} );
 
 /*
