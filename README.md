@@ -20,3 +20,10 @@ La encriptación se realiza de la siguiente manera:
 |i              |imes            |
 |o              |ober            |
 |u              | ufat           |
+
+Ejemlo:
+
+```plaintext
+Texto ingresado: Hola mundo
+Texto encriptado: Hoberlai mufatndober
+```
