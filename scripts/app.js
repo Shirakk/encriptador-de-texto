@@ -1,11 +1,11 @@
-const enc = document.querySelector('#enc');
-const des = document.querySelector('#des');
+const encriptar = document.querySelector('#enc');
+const desencriptar = document.querySelector('#des');
 const copy = document.querySelector('#copiar');
 
 var traduccion = {"a": "ai", "e": "enter", "i": "imes", "o": "ober", "u": "ufat"};
 
-enc.addEventListener( 'click', function() {encriptar(traduccion);} );
-des.addEventListener( 'click', function() {desencriptar(traduccion);} );
+encriptar.addEventListener( 'click', function() {encriptar(traduccion);} );
+desencriptar.addEventListener( 'click', function() {desencriptar(traduccion);} );
 copy.addEventListener( 'click', function() {clipboard();} );
 
 /*
@@ -118,6 +118,10 @@ function desencriptar(traduccion){
     return;
 }
 
+/*
+    La función clipboard copia el texto en el textarea de salida al portapapeles.
+    return: void
+*/
 function clipboard(){
     const texto_out = document.querySelector("#texto_out");
     navigator.clipboard.writeText(texto_out.value);
